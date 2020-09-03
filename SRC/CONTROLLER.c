@@ -107,7 +107,6 @@ int main (void)
 				led = led ^1;
 				delay();
 			}
-		}
 		addh = UART_RxChar();
 		addl = UART_RxChar();
 		dataw= UART_RxChar();
@@ -117,6 +116,7 @@ int main (void)
 		
 		UART_TxChar(datar);
 		delay();
+		}
 	}
 	return 0;
 }
